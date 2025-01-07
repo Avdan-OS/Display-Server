@@ -168,12 +168,21 @@ dependencies = [
 
 [[package]]
 name = "colored"
-version = "2.1.0"
+version = "2.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cbf2150cce219b664a8a70df7a1f933836724b503f8a413af9365b4dcc4d90b8"
+checksum = "117725a109d387c937a1533ce01b450cbde6b88abceea8473c4d7a85853cda3c"
 dependencies = [
  "lazy_static",
- "windows-sys 0.48.0",
+ "windows-sys 0.59.0",
+]
+
+[[package]]
+name = "colored"
+version = "3.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fde0e0ec90c9dfb3b4b1a0891a7dcd0e2bffde2f7efed5fe7c9bb00e5bfb915e"
+dependencies = [
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -181,7 +190,7 @@ name = "compositor"
 version = "0.0.1"
 dependencies = [
  "bitflags 2.6.0",
- "colored",
+ "colored 3.0.0",
  "compositor-macros",
  "json-tree",
  "json_comments",
@@ -689,7 +698,7 @@ name = "json-tree"
 version = "0.1.0"
 source = "git+https://github.com/Sammy99jsp/json-tree.git#b4d332c75143134e86f33fb59addf8e32c5c8bb4"
 dependencies = [
- "colored",
+ "colored 2.2.0",
  "lazy_static",
  "regex",
 ]
